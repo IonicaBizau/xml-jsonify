@@ -49,8 +49,12 @@
   "devDependencies": {},
   "blah": {
     "description": [
-      { "h2": "Why?" },
-      { "p": "[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example)." }
+      {
+        "h2": "Why?"
+      },
+      {
+        "p": "[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example)."
+      }
     ]
   }
 }
