@@ -5,6 +5,11 @@
 
 > A liberal XML to JSON converter.
 
+## Why?
+
+[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example).
+
+
 ## :cloud: Installation
 
 ```sh
@@ -33,6 +38,11 @@ xmlJsonify(`<?xml version="1.0" encoding="UTF-8"?>
   </url>
 </urlset>`, (err, data) => {
     console.log(err || data);
+    // { '$': { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' },
+    //   url:
+    //    [ { loc: 'http://www.example.com/' },
+    //      { loc: 'http://www.example.com/about/' },
+    //      { loc: 'http://www.example.com/latest-news/' } ] }
 });
 ```
 
