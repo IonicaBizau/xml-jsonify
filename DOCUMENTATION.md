@@ -2,13 +2,11 @@
 
 You can see below the API reference of this module.
 
-### `xmlJsonify(a, b)`
-A liberal XML to JSON converter.
+### `xmlJsonify(content, options, cb)`
+Converts the XML input into an object.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
-
-#### Return
-- **Number** Return description.
+- **String** `content`: The XML content.
+- **Object** `options`: The options passed to `xml2js`.
+- **Function** `cb`: The callback function.
 

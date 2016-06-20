@@ -49,15 +49,13 @@ xmlJsonify(`<?xml version="1.0" encoding="UTF-8"?>
 ## :memo: Documentation
 
 
-### `xmlJsonify(a, b)`
-A liberal XML to JSON converter.
+### `xmlJsonify(content, options, cb)`
+Converts the XML input into an object.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
-
-#### Return
-- **Number** Return description.
+- **String** `content`: The XML content.
+- **Object** `options`: The options passed to `xml2js`.
+- **Function** `cb`: The callback function.
 
 
 
