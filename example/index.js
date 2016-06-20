@@ -16,4 +16,9 @@ xmlJsonify(`<?xml version="1.0" encoding="UTF-8"?>
   </url>
 </urlset>`, (err, data) => {
     console.log(err || data);
+    // { '$': { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' },
+    //   url:
+    //    [ { loc: 'http://www.example.com/' },
+    //      { loc: 'http://www.example.com/about/' },
+    //      { loc: 'http://www.example.com/latest-news/' } ] }
 });
