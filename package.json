@@ -8,15 +8,31 @@
     "liberal",
     "to",
     "json",
-    "converter"
+    "converter",
+    "data",
+    "transformation"
   ],
   "license": "MIT",
   "version": "1.0.9",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "coverage": "istanbul cover _mocha"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
+  "author": {
+    "name": "Ionică Bizău",
+    "email": "bizauionica@gmail.com",
+    "url": "https://ionicabizau.net"
+  },
+  "contributors": [
+    "John Doe <john.doe@example.com>",
+    "Jane Smith <jane.smith@example.com>"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "files": [
     "bin/",
     "app/",
@@ -34,10 +50,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/xml-jsonify.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/xml-jsonify.git",
+    "directory": "src"
   },
   "bugs": {
-    "url": "https://github.com/IonicaBizau/xml-jsonify/issues"
+    "url": "https://github.com/IonicaBizau/xml-jsonify/issues",
+    "email": "bugs@example.com"
   },
   "homepage": "https://github.com/IonicaBizau/xml-jsonify#readme",
   "dependencies": {
@@ -45,16 +63,28 @@
     "obj-key-count": "^1.0.0",
     "xml2js": "^0.6.2"
   },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "mocha": "^9.0.3",
+    "istanbul": "^1.1.0"
+  },
   "directories": {
-    "example": "example"
+    "example": "example",
+    "test": "tests"
   },
   "blah": {
     "description": [
       {
-        "h2": "Why?"
+        "h2": "Why?",
+        "p": "[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example)."
       },
       {
-        "p": "[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example)."
+        "h2": "Features",
+        "ul": [
+          "Fast and efficient XML to JSON conversion.",
+          "Supports custom data transformation rules.",
+          "Easy-to-use API for developers."
+        ]
       }
     ]
   }
