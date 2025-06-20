@@ -105,6 +105,12 @@ xmlJsonify(`<?xml version="1.0" encoding="UTF-8"?>
     //      { loc: 'http://www.example.com/about/' },
     //      { loc: 'http://www.example.com/latest-news/' } ] }
 });
+
+
+xmlJsonify(`<name>
+    <first>Johnny</first>
+    <last>B.</last>
+</name>`).then(console.log)
 ```
 
 
