@@ -11,7 +11,7 @@
     "converter"
   ],
   "license": "MIT",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -59,7 +59,7 @@
         "p": "[`xml2js`](https://www.npmjs.com/package/xml2js) is cool and works perfectly to convert XML into JS. However, often I need a simplified version of the converted result. So, this module will not take care of the XML attributes and will not keep one-element arrays in its result (see the example)."
       },
       {
-       "p": "For the complementary package, see [`json-xmlify`](https://github.com/IonicaBizau/json-xmlify)."
+        "p": "For the complementary package, see [`json-xmlify`](https://github.com/IonicaBizau/json-xmlify)."
       }
     ]
   }
